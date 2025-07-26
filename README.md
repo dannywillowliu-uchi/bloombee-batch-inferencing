@@ -1,6 +1,6 @@
-# Bloombee Optimized for Batch Inference
+# Bloombee With Batch Inference Capabilities
 
-Optimized version of Bloombee with memory management improvements for batch inference.
+demo version of Bloombee with batch inferencing. Issues with memory allocation and max token length caps.
 
 ## Changes Made
 
@@ -8,7 +8,7 @@ Optimized version of Bloombee with memory management improvements for batch infe
 - `bloom_venv/lib/python3.12/site-packages/bloombee/server/backend.py`
   - Added 256MB memory limit for batch processing
   - Dynamic chunking based on batch size
-  - Max length capped at 256 tokens
+  - Max length hard code capped at 256 tokens to prevent memory alloc errors
   - Debug logging added
 
 - `bloom_venv/lib/python3.12/site-packages/bloombee/server/handler.py`
@@ -33,9 +33,4 @@ Optimized version of Bloombee with memory management improvements for batch infe
 
 - Fixed 4GB OOM crashes
 - Improved batch processing speed
-- Fixed 1-token generation limit in batch mode
-- Reduced memory allocations from 4GB+ to 256MB-1.5GB
-
-## License
-
-Same as original Bloombee. 
+- need to test/iterate on whether batch inferencing works on >1 token generation
