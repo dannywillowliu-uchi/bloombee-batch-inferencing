@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.class
+
+# Virtual environments
+bloom_venv_new/
+bloom_venv_redo/
+venv/
+env/
+
+# Environment files
+*.env
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
