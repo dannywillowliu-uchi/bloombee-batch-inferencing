@@ -1,4 +1,4 @@
-# Bloombee With Batch Inference Capabilities
+# Bloombee ver 0.1.3 With Batch Inference Capabilities
 
 demo version of Bloombee with batch inferencing. Issues with memory allocation and max token length caps.
 
